@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/m04.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="company-name-container"></header>
+        <nav class="main-nav-container">
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Company</a></li>
+                <li>Gallery
+                    <ul class="dropdown-nav">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Building</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <main class="main-content-container">
+            <div class="demo-container-1">
+                <div class="demo-image-container">
+                    <!-- <img src="https://via.placeholder.com/150x150" alt="Platzhalter">
+                    Kann zu verzerrung führen, da das Bild skaliert wird
+                    ALternative:
+                    picture-Tag - Container für mehrere BIldquellen
+                        Muss mindestens ein soruce-Tag enthalten
+                        Und genau ein img-Element
+                    Beim stylen reicht es das img Element anzusprechen, da nur die src des img-Tags ersetzt wird
+                    -->
+                    <!-- <figure> -->
+                        <picture>
+                            <!-- source enthält ein srcset(Quelle des Bildes) und ein Media-Attribut (Bedingung) -->
+                            <!-- type-Attribut spezifiziert welche Datei verwendet wird und der Browser nimmt sich das erste passende -->
+                            <!-- <source type="image/heif" srcset="/css/800x800.heif">
+                            <source type="image/webp" srcset="/css/800x800.webp"> -->
+                            <source media="(min-width: 1000px)" srcset="https://via.placeholder.com/800x800">
+                        <source media="(min-width: 900px)" srcset="https://via.placeholder.com/650x650">
+                        <source media="(min-width: 750px)" srcset="https://via.placeholder.com/350x350">
+                            <img src="https://via.placeholder.com/150x150" alt="Ein Platzhalterbild">
+                        </picture>
+                        <!-- <figcaption>Hier wird der picture-Tag gezeigt</figcaption>
+                    </figure> -->
+                    <!-- Funktioniert wie Image Tag, aber ohne media und src statt srcset, type gibt an welches Video-Format verwendet wird -->
+                    <video>
+                        <source src="" type="video/webm">
+                    </video>
+                </div>
+            </div>
+            <div class="demo-container-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, vero enim optio tenetur, minus odit odio
+                nulla libero molestiae ab natus fugiat distinctio labore vel exercitationem veritatis provident sit
+                aliquid impedit, dolor dicta voluptate. Aperiam recusandae illo doloremque aliquid rerum similique
+                possimus id praesentium repellat. Voluptatibus at facere consectetur qui porro fuga unde quos totam
+                rerum ipsa veniam eos, a ullam eveniet veritatis hic excepturi ea assumenda eligendi voluptatem
+                repudiandae ab deserunt doloremque. Nesciunt enim numquam rerum at magnam voluptas possimus, mollitia
+                animi autem consequatur qui. Excepturi, dolore repudiandae? Corrupti iusto sunt aut ullam impedit illo,
+                blanditiis ipsam veniam laboriosam!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium non, aut neque fuga provident
+                voluptatum accusantium amet est consequatur enim. Nesciunt, tempora enim omnis reiciendis nostrum itaque
+                molestiae assumenda perferendis! Rem, recusandae laboriosam. Doloremque quos corporis dicta, fugiat
+                voluptatum sint laudantium recusandae est cum odit? Commodi veniam iste, iure maxime quis cum
+                consequuntur vero! Architecto amet omnis quae harum ipsam laborum veniam nesciunt iure ducimus
+                doloremque voluptatem, vero totam officia dignissimos distinctio, ex repudiandae non laudantium quam
+                rerum maiores! Corrupti magni ipsum praesentium, dolores fuga consectetur debitis? Accusantium incidunt
+                qui accusamus perspiciatis commodi impedit consequuntur repellendus sed minus hic saepe adipisci ullam
+                iusto quasi, itaque molestiae recusandae placeat alias vero ipsam voluptatum voluptates ab consequatur?
+                Impedit ducimus provident rerum earum consequatur repudiandae sit nemo, eaque ad dolorum nihil
+                blanditiis quos voluptate quibusdam mollitia voluptatibus rem deleniti temporibus quod quidem
+                perspiciatis animi dolorem dignissimos repellat. Inventore consectetur quas minima id soluta!
+            </div>
+
+            <div class="demo-container-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus quibusdam nihil molestias
+                doloribus facilis dolores voluptas at qui voluptate eos iste, assumenda corrupti excepturi totam itaque
+                adipisci repellat ratione quas inventore non. At delectus vitae magni cum alias placeat minima,
+                obcaecati temporibus ex maxime explicabo velit similique hic nostrum quia officiis laudantium architecto
+                asperiores neque nemo dolor nobis ea voluptatibus. Vel provident vero ipsam tenetur ratione error
+                debitis autem laborum commodi voluptate aut dicta aspernatur sint sapiente tempore numquam, rerum quo
+                laboriosam nulla expedita ea consequatur incidunt! Dolores dicta aliquam nam quo aliquid voluptatum
+                tempora nemo consectetur nobis accusamus?
+            </div>
+        </main>
+        <footer class="main-footer-container"></footer>
+    </div>
+</body>
+
+</html>

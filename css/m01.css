@@ -1,0 +1,166 @@
+/* Css-Selektoren */
+/* 
+    div - Elements-Selektor
+    .class - Klassen-Selektor
+    #id - Id-Selektor
+    [Attribut]-Attributs-Selektor
+    + - Sibling-Selektor
+    ~ - General Sibling Selektor
+    tag tag2 - Descendant-Selektor
+    tag>tag2 - Child-Selektor
+    tag1, tag2 - Grouping
+    * - Universal-Selektor
+    :pseudo-Klassen
+    ::pseudo-Elemente
+    Wenn man üben will: https://flukeout.github.io/
+*/
+/* Unterschied block und inline */
+/* 
+
+    block - Erzwingt eine neue Zeile, da es sich die gesamte Breite des Parents nimmt, hält sich an height und width
+    inline - Nehmen nur so vile Platz ein wie sie benötigen, ignoriert height und width
+
+
+*/
+
+/* Zentrieren von Bildern:
+    display:block;
+    margin: auto; => Versucht auf beide Seiten den selben Abstand zu setzten => Bild ist mittig
+*/
+
+/* Cascading */
+/* 
+    Warum?
+    Damit der Browser weiß wie er sich bei wiedersprüchen oder bei multiplen Stylesheets zu verhalten hat
+*/
+
+.inline {
+    color: red;
+}
+
+.inline {
+    color: green !important;
+}
+
+.inline {
+    font-size: 24px;
+}
+
+/* Bei wiedersprüchlichen Regeln wird die angewandt, die zu letzt definiert wurde
+    Wenn Regeln sich nicht wiedersprechen gelten beide
+    => span ist jetzt Grün und 24px groß
+ */
+
+/* Reihenfolge: 
+    Ganz oben höchste Priorität, unten niedrigste:
+    1. user important Regeln gelten
+    2. author important Regeln
+    3. author normal Regeln
+    4. user normal Regeln
+    5. user agent Regeln
+ */
+
+/* Specifity:
+    Ganz oben höchste Priorität, unten niedrigste:
+    1. Inline-Styling
+    2. Id
+    3. Klasse und Pseudo-Klassen
+    4. Elementen und Pseudo-Elemente
+
+
+*/
+
+h1#testId {
+    color: red;
+}
+
+#testId {
+    color:green;  /* Wird nicht überschrieben, da die Regel darüber spezifischer ist */
+}
+
+
+
+body{
+    margin: 0;
+}
+
+.company-name-container{
+    background-color: #002552;
+    min-height: 200px;
+}
+
+.main-nav-container{
+    background-color: #5d858b;
+}
+
+.main-nav-container ul{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.main-nav-container a{
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content-container{
+    background-color: #BEDAE6;
+    min-height: 200px;
+}
+
+.main-footer-container{
+    background-color: #002552;
+    min-height: 100px;
+}
+
+/* 
+    Einheiten in CSS:
+
+
+    Absolute:
+    Haben immer die selbe Größe:
+    px - 1 pixel 1/96th inch entsprechen in Wahrheit aber einem device pixel auch dot genannt
+    cm - 1 centimeter
+    mm - 1 millimeter
+    in - 1 inch ~ 2.5 cm
+    pt - 1/72 inch 1 point
+    pc - 1 pica = 12pts
+
+    Relative Einheiten:
+    ! em - Relativ zur Schriftgröße des Elementes => 2em => 2 mal die Schriftgröße
+    ! rem - Relativ zur Schriftgröße des Root-Elements => :root oder html; Bei den meisten Browsern standard 16px
+    ! % - Bezieht sich auf die Größe des Elternelementes
+    vh,vw viewportHeight/viewportWidth; 1vh ^= 1% der viewportHöhe, bei Desktops Größe des Renderbereichs innerhalb des Browser-Fensters
+    vmin, vmax - Relativ zur kleineren/größeren Seite des Render-Bereichs, 1vmin ^= 1% der kleineren Seite
+    ch - Relativ zur Breite der 0 der derzeitigen Schriftgröße und Schriftart
+    ex - Relativ zur x-Höhe derderzeitigen Schriftart/Schriftgröße
+*/
+
+/* 
+    Position:
+    static - Normale Position jedes HTML Elements, ordnet sic nach Fluss des HTML-Dokumentes an, ignoriert top,bottom, left und right
+    relative - Element wird durch top, bottom. left und right relativ zu seiner Ursprungsposition verschoben, ohne width nimmt es die gesamte Breite des Elternelementes ein
+    Verschieben sich von dne Positionsparametern weg, mit negativen Größen wird das Verhalten umgedreht; Der restliche Content ordnet sich nicht neu an
+    absolute - Ordnet sich nach dem nächsten Übergeordneten ELement, das nicht static ist an
+    Wenn kein übergeordnetes Element nicht static ist, orientiert es sich am Dokument selbst
+    Andere Elemente ignorieren das aboslute-Element und nehmen dessen Platz ein => Kann überlagert sein
+    fixed - Orientiert sich am Dokument und scrollt mit dem User mit
+    sticky - Zwischending zwischen relative und fixed, Abhängig von der Scrollposition des Users, bliebt innerhalb des übergeordneten Elements, Wechselt auf position: fixed, sobald man es beim Scrollen nicht mehr sehen würde
+*/
+
+/* Box-Modell */
+/* 
+    Besteht aus (von innen nach außen):
+    Content - tatsächlicher Inhalt
+    Padding - transparente Zwischenraum zwischen Border und Content (wird von background-color eingefärbt)
+    Border - farbiger Rand um das Padding herum
+    Margin - transparenter Abstand ziwschen Border und Seitenrändern
+    Tatsächliche Größe des Elements: height + padding + border + margin, width + padding + border + margin
+    box-sizing: border-box; => Zählt padding und border zu content, damit man auf die gesetzte height oder width kommt
+
+
+*/

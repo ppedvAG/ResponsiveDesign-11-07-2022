@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/m01.css">
+    <title>Modul 1</title>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Emmet -->
+        <!-- 
+            tag + Tab => <tag></tag>
+            Kombinatoren:
+                > - Child-Combinator tag1>tag2 =>   <tag1>
+                                                        <tag2>Tag 2 wird als Child von tag1 erstellt</tag2>
+                                                    </tag1>
+                ^ - Climb-up tag1>tag2^tag3 <tag1><tag2></tag2></tag1>
+                                            <tag3> Der Tag nach dem climb-up wird ein Level weiter oben definiert</tag3>
+                + - Sibling-Combinator tag1+tag2 => <tag1></tag1><tag2>Tag2 wird als Nachbar von Tag 1 erstellt</tag2>
+                () - Grouping => ERlaubt komplexere Strukturen
+                div>(header>ul>li*2>a)+footer>p
+                =>
+                <div>
+            <header>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </header>
+            <footer>
+                <p></p>
+            </footer>
+            </div>
+            * - Multiplicator => tag1*3 => tag1 wird 3 mal erstellt
+            Klassen und ID's
+            tag1.class => <tag1 class="class"></tag1>
+            tag1#id => <tag1 id="id"></tag1>
+
+            Numbering:
+            $ - Nummeriert Klassen/Id's oder Texte durch, bietet sich v.a. in Kombi mit Multiplikator an
+            ul>li.item$*6 => 
+        <ul>
+            <li class="item1"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+            <li class="item6"></li>
+        </ul>
+
+        Eigene Attribute:
+        tag1[attributName="attributWert"]
+        p[title="Test"] => <p title="Test"></p>
+
+        Texte:
+        tag1{Beispieltext} => <tag1>Beispieltext</tag1>
+
+        Implizite Tags:
+        .test => erstellt div
+        table>.row1>.col1 > erstellt tr und td innerhalb von table
+        ul>.item > Erstellt li innerhalb von Listen
+
+        Emmet-Cheatsheet: https://docs.emmet.io/cheat-sheet/
+        -->
+    <header class="company-name-container"></header>
+    <nav class="main-nav-container">
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Company</a></li>
+            <li>Gallery
+                <ul>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Building</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <main class="main-content-container">
+        <div>
+            <!-- <span class="inline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facere, quod corporis id harum excepturi?
+            </span>
+            <div class="block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facere, quod corporis id harum excepturi?
+            </div>
+            <img src="https://via.placeholder.com/250x250" alt="Platzhalter"> -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aut optio unde, impedit quas facilis reiciendis velit, architecto perspiciatis qui officiis! Maxime, voluptates! Quibusdam hic provident impedit ab beatae, reiciendis sapiente pariatur veritatis iure commodi corrupti totam ad delectus soluta repudiandae asperiores illo incidunt ipsa numquam quas fugiat quae minus. Obcaecati optio, sequi eos placeat, est quisquam earum a dolores dolorum architecto ullam perferendis et consectetur labore blanditiis quo autem modi! Perferendis, architecto soluta iusto, fugit laudantium officiis ex quasi modi quam, error incidunt voluptatem aliquid voluptate maxime perspiciatis nostrum eos. Reiciendis aliquam nobis aperiam laudantium tempore soluta debitis quisquam vero ipsa beatae, quam labore accusantium in voluptate ullam harum corrupti neque. Quaerat, possimus quae? Temporibus enim ipsa dignissimos expedita aliquam dicta cupiditate ipsum, sapiente earum praesentium dolorum repudiandae unde, reiciendis veritatis natus mollitia voluptatum autem molestiae, saepe vitae tempore asperiores? Nihil ipsa modi minus quidem! Beatae, ratione fugiat. Ducimus ad minima error fuga, rerum distinctio nemo accusamus minus tenetur quo. Porro, nulla ex? A quidem fugit velit provident earum magni nulla quibusdam, repellat molestiae tenetur dolorum temporibus fuga architecto? Ratione reprehenderit fuga esse cupiditate excepturi provident, tempore ullam praesentium dolores repellat ipsam quisquam deleniti quae ea! Consequatur distinctio maxime ratione, deleniti placeat neque sequi rem eum porro ducimus iste inventore assumenda sapiente eligendi est sunt. Voluptate, maiores magni. Aperiam molestias eius ea porro. Laboriosam voluptatum illo pariatur voluptas perspiciatis asperiores impedit, maiores, aspernatur soluta iusto laborum excepturi consequatur tempore eveniet amet expedita corporis optio commodi incidunt quae hic! Quam doloribus quasi assumenda aliquid culpa enim corporis. Architecto vel dolores dignissimos numquam quo. Odit itaque suscipit ratione porro ipsum aspernatur dolores hic, animi voluptates dicta eum odio illo fuga quis nisi obcaecati labore nulla earum architecto. Quas, iste. Eaque odit dolorem quisquam iure error nemo, in similique dicta animi consectetur ullam facere. Dolores ab facilis autem eum omnis. Provident aut nemo, sequi harum recusandae amet, dolorem consequatur unde totam numquam quis, laboriosam nobis excepturi iure laborum vel distinctio alias ab ullam perferendis perspiciatis voluptas incidunt! Sed aut eveniet velit eligendi nisi ullam quos amet laudantium et, magnam accusantium veritatis tenetur dolores quisquam ducimus provident. Vel, itaque. Quas temporibus a quam dicta quibusdam molestiae molestias laboriosam autem quo? Soluta modi impedit fuga iure laboriosam quidem facere exercitationem. Placeat tempore suscipit quisquam, magnam deleniti quae amet labore. A doloremque quaerat reiciendis unde. Distinctio, fuga aliquid vero corporis, eaque sequi corrupti atque numquam excepturi autem maiores id. Quo ut aspernatur ipsa consectetur, repellat ipsam eos nobis sit. Sapiente praesentium facere labore doloremque accusantium. Similique, maiores! Quia soluta nemo excepturi quis eveniet quas repellat commodi consequatur autem delectus, facere minus saepe temporibus quidem, voluptatem veniam nisi nam! Repudiandae consequatur, ratione molestiae nobis eius a ab illo nostrum nesciunt saepe recusandae ipsam magni eaque explicabo voluptas vel perferendis! Reiciendis tempore totam esse beatae optio ipsa debitis maxime porro itaque, assumenda magni delectus nulla excepturi exercitationem laudantium alias ut provident aut ullam repellendus saepe est ipsam modi! Nobis sed harum itaque ex suscipit veritatis, fugit impedit?
+        </div>
+    </main>
+    <footer class="main-footer-container"></footer>
+    </div>
+</body>
+</html>

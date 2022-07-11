@@ -1,0 +1,74 @@
+:root{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+.company-name-container{
+    background-color: #002552;
+    min-height: 200px;
+}
+
+.main-nav-container{
+    background-color: #5d858b;
+}
+
+.main-nav-container ul{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.main-nav-container a{
+    color: inherit;
+}
+
+.main-nav>li{
+    display: inline-block;
+    position: relative;
+    color: #f4f9fc;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: .5em 2em 0;
+}
+
+.main-nav>li:hover .dropdown-nav{
+    display: block;
+}
+
+.main-nav>li>a:hover{
+    color: #002552;
+}
+
+
+.dropdown-nav{
+    display: none;
+    position: absolute;
+    background-color: #92c5db;
+    width: 100%;
+}
+
+.dropdown-nav>li{
+    padding: .2em 1em;
+}
+
+.dropdown-nav>li:hover{
+    background-color: #5d858b;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content-container{
+    background-color: #BEDAE6;
+    min-height: 200px;
+}
+
+.main-footer-container{
+    background-color: #002552;
+    min-height: 100px;
+}

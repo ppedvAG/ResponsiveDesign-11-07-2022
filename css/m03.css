@@ -1,0 +1,61 @@
+/* Farben in CSS */
+
+/* 
+    1. Namen der Farbe: color: red;
+    2. HexCode der Farbe: color: #FFFF
+    3. Farbfunktionen: 
+        3.1 rgb(rot, grün, blau) rgb(255,255,255)
+        3.2 rgba(rot, grün, blau, alpha)
+        3.3 hsl(farbton, sättigung, helligkeit)
+        3.4 hsl(farbton, sättigung, helligkeit, alpha)
+
+    Nützliche Links:
+    http://hslpicker.com
+    http://paletton.com
+    https://color.adobe.com/
+
+    Color-Palette:
+    https://coolors.co/?home
+    http://colormind.io/
+
+    Inspiration:
+    https://de.wordpress.org/themes/
+
+*/
+div {
+    color: hsla(0, 100%, 50%, 0.245);
+}
+
+/*  HSL/HSLA */
+/* 
+    Farbton- Wert zwischen 0 und 360
+    0 Rot
+    120 Grün
+    240 Blau
+    Sättigung - Wert zwischen 0 und 100
+    0 Grautöne
+    100 intensiver Farbton
+    Helligkeit - Werte zwischen 0 und 100
+    0 - Schwarz
+    50 - Intensive Farbton
+    100 - Weiß
+    Alpha - Wert zwischen 0 und 1
+    0 - Transparent
+    1 - Intransparent
+*/
+
+div {
+    color: hsl(0deg 61% 31%);
+}
+
+/* 
+    Scalable Vector Graphics
+    Verleieren beim Zoomen nicht an Qualität
+    Jedes SVG Attribut kann animiert werden
+
+*/
+
+.svg {
+    background: url(vectorpaint.svg);
+    background-size: contain;
+}

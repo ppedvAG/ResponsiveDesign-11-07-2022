@@ -13,7 +13,6 @@ body{
 
 .main-nav-container{
     background-color: #5d858b;
-    position: sticky;
 }
 
 .main-nav-container ul{
@@ -67,7 +66,25 @@ a{
 .main-content-container{
     background-color: #BEDAE6;
     min-height: 200px;
+    padding: 2em; /* padding wird später verändert */
 }
+
+
+.svg-test{
+    width: 25%;
+    height: 100px;
+    background-color: darkorange;
+    padding: 1em;
+}
+
+
+.svg-test>svg{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 .main-footer-container{
     background-color: #002552;

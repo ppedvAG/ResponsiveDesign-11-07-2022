@@ -1,0 +1,159 @@
+:root{
+    font-size: 20px;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #BEDAE6;
+}
+
+
+.page-container{
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: [part1] 150px [part2] auto [part3] 250px; 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.company-name-container{
+    grid-column: 1/13;
+    background-color: #002552;
+    min-height: 200px;
+}
+
+.main-nav-container{
+    grid-column: [part1] / [part2];
+    background-color: #5d858b;
+}
+
+.main-nav-container ul{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.main-nav-container a{
+    color: inherit;
+}
+
+.main-nav::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.main-nav>li{
+    float: left;
+    position: relative;
+    color: #f4f9fc;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: .5em 2em 0;
+}
+
+.main-nav>li:hover .dropdown-nav{
+    display: block;
+}
+
+.main-nav>li>a:hover{
+    color: #002552;
+}
+
+
+.dropdown-nav{
+    display: none;
+    position: absolute;
+    background-color: #92c5db;
+    width: 100%;
+}
+
+.dropdown-nav>li{
+    padding: .2em 1em;
+}
+
+.dropdown-nav>li:hover{
+    background-color: #5d858b;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.demo-textbox-1, .demo-textbox-2{
+    text-align: justify;
+    padding: 2rem;
+    color: #141b1b;
+    border-left: 4px groove #5d858b;
+    box-shadow: 4px 4px 10px #141b1b;
+}
+
+.demo-textbox-1{
+    grid-column: 1/7;
+}
+
+.demo-textbox-2{
+    grid-column: 7/13;
+}
+
+.demo-textbox-1::first-letter, .demo-textbox-2::first-letter{
+    font-family: Parchment;
+    font-size: 2.5em;
+    line-height: 1rem;
+    color: #5d858b;
+}
+
+.demo-textbox-left{
+    grid-column: 1/7;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 2rem 3rem;
+    color: #002552;
+    text-align: justify;
+}
+
+.demo-img-container-right{
+    grid-column: 7/13;
+}
+
+/* .demo-img-container-1{
+    grid-column: 1/4;
+}
+.demo-img-container-2{
+    grid-column: 4/7;
+}
+.demo-img-container-3{
+    grid-column: 7/10;
+}
+.demo-img-container-4{
+    grid-column: 10/13;
+} */
+
+.image-row {
+    grid-column: 1/13;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo-img-container-1>img,
+.demo-img-container-2>img,
+.demo-img-container-3>img,
+.demo-img-container-4>img,
+.demo-img-container-right>img{
+    display: block;
+    width: 100%;
+}
+
+.main-footer-container{
+    grid-column: 1/13;
+    background-color: #002552;
+    min-height: 100px;
+}
+
+/* 
+    Flex-Box Generator: https://www.webmart.de/web/css-tools-flexbox
+    Gird-Generator: https://grid.layoutit.com/
+*/

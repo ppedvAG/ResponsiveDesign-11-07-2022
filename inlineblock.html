@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlineblock</title>
+    <style>
+        div div:nth-child(even) {
+            float:left;
+        }
+        div div:nth-child(odd) {
+            float:right;
+        }
+        .test {
+            background-color: red;
+            float:none !important;
+        }
+
+        .test::after,
+        .test::before {
+            content: " ";
+            display: block;
+        }
+        .test::after {
+            clear: left;
+            /*
+            Mit clear verhalten sich nachfolgende Elemente, in unserem Fall .test2, so, als ob die div mit klasse test mit nicht float elementen befüllt wäre
+            Sie rückt also nicht nach oben nach sondern hält sich an das Layout
+            */
+        } 
+
+        .test2 {
+            height: 150px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    </div>
+    <div class="test2"></div>
+</body>
+</html>

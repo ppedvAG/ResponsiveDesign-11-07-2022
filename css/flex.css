@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    /* WIrd damit zum flex-container und all seine children zu flex-items */
+    /* Normalerweise verählt sich der COntainer selbst wie ein block Element
+    Mit inline-flex verhält sich der COntainer wie ein inline Element */
+    /* Ist prinzipiell eindimensional
+    Entweder row oder column */
+    background-color: grey;
+    /* 
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://flexbox.malven.co/
+    */
+}
+
+.flex-item {
+    background-color: wheat;
+}

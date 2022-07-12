@@ -108,3 +108,31 @@ a{
     background-color: #002552;
     min-height: 100px;
 }
+
+img:hover::before {
+    content: "Test textqadasdasd asdasda asd asfafsdafsadf";
+}
+
+/* CSS Varaiblen:
+    Definition: 
+    Meistens in der :root Pseudo-Klasse
+
+*/
+
+:root {
+    /* Hier werden zwei Variablen definiert */
+    --color1: green;
+    --color2: black;
+}
+
+@media screen {
+    :root {
+        --color1:blue;
+        --size: 50px;
+    }
+}
+
+.main-footer-container{
+    background-color: var(--color1, brown);
+    /* Hier wird eine Variable verwendet der zweite Parameter ist ein Fallback wert, falls die Variable nicht exisitert oder der Browser sie nich tunterstützt*/
+}

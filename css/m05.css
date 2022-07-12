@@ -1,0 +1,131 @@
+:root{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.company-name-container{
+    background-color: #002552;
+    min-height: 200px;
+}
+
+.main-nav-container{
+    background-color: #5d858b;
+}
+
+.main-nav-container ul{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.main-nav-container a{
+    color: inherit;
+}
+
+.main-nav::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.main-nav>li{
+    float: left;
+    position: relative;
+    color: #f4f9fc;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: .5em 2em 0;
+}
+
+.main-nav>li:hover .dropdown-nav{
+    display: block;
+}
+
+.main-nav>li>a:hover{
+    color: #002552;
+}
+
+
+.dropdown-nav{
+    display: none;
+    position: absolute;
+    background-color: #92c5db;
+    width: 100%;
+}
+
+.dropdown-nav>li{
+    padding: .2em 1em;
+}
+
+.dropdown-nav>li:hover{
+    background-color: #5d858b;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content-container{
+    background-color: #BEDAE6;
+    min-height: 200px;
+}
+
+.flex-container{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-textbox{
+    width: 50%;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 2rem;
+    color: #141b1b;
+    border-left: 4px groove #5d858b;
+    box-shadow: 4px 4px 10px #141b1b;
+}
+
+.flex-textbox::first-letter{
+    font-family: Parchment;
+    font-size: 2.5em;
+    line-height: 1rem;
+    color: #5d858b;
+}
+
+.flex-textbox-2{
+    width: 50%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 2rem 3rem;
+    color: #002552;
+}
+
+.flex-img-container-2{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.flex-img-container-4{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #141b1b;
+}
+
+.flex-img-container-4>img, .flex-img-container-2>img{
+    display: block;
+    width: 100%;
+}
+
+.main-footer-container{
+    background-color: #002552;
+    min-height: 100px;
+}

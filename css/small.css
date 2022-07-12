@@ -1,0 +1,19 @@
+body {
+    background-color: brown;
+}
+
+/* 
+@import url(/css/large.css) (min-width:600px); */
+
+@media all and (orientation:landscape) {
+    body {
+        background-color: black;
+    }
+}
+
+
+@media all and (orientation:portrait) {
+    body {
+        background-color: pink;
+    }
+}
